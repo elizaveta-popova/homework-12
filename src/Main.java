@@ -1,24 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-        Book FightClub = new Book("FightClub", 1996);
+        Author ChuckPalahniuk = new Author ("Chuck", "Palahniuk");
+        Book FightClub = new Book("FightClub", 1996, ChuckPalahniuk);
         System.out.println("Название книги: " + FightClub.getTitle());
         System.out.println("Год публикации книги: " + FightClub.getYear());
+        System.out.println("Автор: " + ChuckPalahniuk.getName() + " " + ChuckPalahniuk.getSurname());
+
         FightClub.setYear(1999);
         System.out.println("Новый год публикации книги: " + FightClub.getYear());
 
-        Author ChuckPalahniuk = new Author ("Chuck", "Palahniuk");
-        System.out.println("Имя автора: " + ChuckPalahniuk.getName());
-        System.out.println("Фамилия автора: " + ChuckPalahniuk.getSurname());
-
         System.out.println("-------------------");
 
-        Book ForrestGump = new Book("Forrest Gump", 1986);
+        Author WinstonGroom = new Author ("Winston", "Groom");
+        Book ForrestGump = new Book("Forrest Gump", 1986, WinstonGroom);
         System.out.println("Название книги: " + ForrestGump.getTitle());
         System.out.println("Год публикации книги: " + ForrestGump.getYear());
-        Author WinstonGroom = new Author ("Winston", "Groom");
-        System.out.println("Имя автора: " + WinstonGroom.getName());
-        System.out.println("Фамилия автора: " + WinstonGroom.getSurname());
-
+        System.out.println("Автор: " + WinstonGroom.getName() + " " + WinstonGroom.getSurname());
 
 
         }
